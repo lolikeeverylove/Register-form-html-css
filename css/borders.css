@@ -1,0 +1,51 @@
+.picture{
+    background-image: url("../image/kek.PNG");
+}
+p {
+    border: 3px solid #2F3841;
+    border-radius: 10px;
+    width: 175px;
+    text-align: center;
+    /*background-color: #32322;*/
+}
+.hui{
+    border: 3px solid #2F3841;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: azure;
+    margin-left: 43%;
+    box-shadow: 3px -3px 7px #000000;
+}
+.hui:hover{
+    border-radius: 20px;
+    border: 1px solid #700600;
+}
+#button{
+    border: 5px solid #2F3841;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: azure;
+    margin-left: 50%;
+    box-shadow: 2px -2px 7px #000000;
+}
+#button:hover{
+    border-radius: 12px;
+    border: 2px solid #000000;
+}
+.heh {
+    height: 20px;
+    width: 30px;
+    border: 20px solid #000000;
+}
+.main{
+    margin-left: 46%;
+    margin-bottom: 30px;
+}
+.first{
+    margin-top: 150px;
+}
+.backgrounder{
+    background-image: url("../image/maxresdefault.jpg");
+}

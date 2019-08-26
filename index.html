@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My site</title>
+    <link rel="stylesheet" href="css/borders.css" type="text/css"/>
+    <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript">
+        function valid (form) {
+            var fail = false;
+            var email = form.Email.value;
+            var login = form.login.value;
+            var pass = form.pass.value;
+            var repass = form.chPass.value;
+            var name = form.name.value;
+            var family = form.family.value;
+
+            var adr_pattern = /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i;
+
+
+            if (adr_pattern.test(email)==false)
+                fail = "Вы ввели емаил не правильно";
+            else if (login == "" || login == " ")
+                fail = "Вы не ввели логин ";
+            else if (pass == "")
+                fail = "Вы не ввели пароль";
+            else if (pass != repass)
+                fail = "Пароли не совпадают";
+            else if (name == "")
+                fail = "Вы не ввели имя";
+            else if (family == "")
+                fail = "Вы не ввели фамилию";
+            else
+                document.location.href='http://localhost:63342/webSite/k4k.html?_ijt=7ccnqt5d3ofcjrbhgh6s0opueo'
+
+            // else if (state == "")
+            //     fail = "Укажите пол"
+
+            if (fail)
+                alert(fail);
+        }
+        </script>
+</head>
+<body class="backgrounder">
+<h1 class="main first">Мой магазен</h1>
+<form  id ="form" >
+    <input type="email" name="Email" class="hui" placeholder="Введите емэил"> </br></br>
+    <input type="text" name="login" class="hui" placeholder="Введите логин"> </br></br>
+    <input type="password" class="hui"name="pass" placeholder="Введите пароль"></br></br>
+    <input type="password" class="hui"name="chPass" placeholder="Проверка пароля"></br></br>
+    <input type="text" class="hui"name="name"id = "name" placeholder="Введите имя"></br></br>
+    <input type="text" class="hui"name="family"id = "family" placeholder="Введите фамилию"></br></br>
+    <input type="button" id ="button" onclick="valid(document.getElementById('form'))" name="submit" value="Готово"/>
+</form>
+
+</body>
+</html>
